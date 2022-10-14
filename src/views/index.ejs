@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <%- include('partials/head') %>
 </head>
 <body>
+    <%- include('partials/navigation') %>
+
     <h1>Here from freaking EJS</h1>
-    <p>acá se puede pasar un: <%= x %> </p>
+    <p>acá se puede pasar algo como: <%= x %> </p>
+
+    <%- include('partials/footer') %>
 </body>
 </html>
