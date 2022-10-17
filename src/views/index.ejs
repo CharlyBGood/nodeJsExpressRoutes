@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
     <%- include('partials/head') %>
-</head>
-<body>
+  </head>
+  <body>
     <%- include('partials/navigation') %>
 
     <!-- main content  -->
+    <header
+      class="container vh-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <img src="/img/lunaticoin.png" alt="lunatihorse logo" class="w-25" />
+      <h1>Here from freaking EJS</h1>
+      <p>acá se puede pasar algo como: <%= x %></p>
+      <a href="/about" class="btn btn-primary w-25">About</a>
+    </header>
 
-    <h1>Here from freaking EJS</h1>
-    <p>acá se puede pasar algo como: <%= x %> </p>
     <!-- main content -->
 
     <%- include('partials/footer') %>
-</body>
+  </body>
 </html>
