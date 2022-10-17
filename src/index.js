@@ -2,7 +2,7 @@ import express, { Router } from "express";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-import indexRoutes from "./routes/index.routes.js"
+import indexRoutes from "./routes/index.routes.js";
 
 const app = express();
 
@@ -12,9 +12,9 @@ app.set("views", join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(indexRoutes);
 
-app.use(express.static(join(__dirname, "public")))
+app.use(express.static(join(__dirname, "public")));
 
-app.listen(3000);
-console.log("server listening on Port", 3000);
+app.listen(process.env.PORT || 3000);
+console.log("server listening on Port", process.env.PORT || 3000);
 
 export default Router;
