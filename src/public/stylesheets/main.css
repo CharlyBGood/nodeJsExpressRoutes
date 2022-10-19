@@ -8,3 +8,8 @@ body {
   width: 100%;
   height: auto;
 }
+
+.btn {
+  background-color: #e0970f;
+  border: none;
+}
